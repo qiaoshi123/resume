@@ -86,19 +86,11 @@ html,body{
     background-size: 100% 100%;
 }
 .list  li:nth-of-type(5){
-    background: yellow;
+    background:url("../images/screen5_bg.png");
     background-size: 100% 100%;
 }
 .list  li:nth-of-type(6){
-    background: deeppink;
-    background-size: 100% 100%;
-}
-.list  li:nth-of-type(7){
-    background-size: 100% 100%;
-    display: block;
-}
-.list  li:nth-of-type(8){
-    background:lightblue;
+    background:url("../images/screen5.png");
     background-size: 100% 100%;
 }
 
@@ -106,7 +98,6 @@ html,body{
 .list li.zIndex{
     z-index: 20;
 }
-
 .li1_header{
     width: 150px;
     height: 150px;
@@ -717,6 +708,108 @@ html,body{
     -webkit-animation-duration: 1s;
     animation-fill-mode: both;
     -webkit-animation-fill-mode: both;
+}
+.li5_content{
+    width: 130px;
+    height: 280px;
+    border: 1px dashed lightsteelblue;
+    margin: 12% 0 0 8%;
+    border-right:none;
+    position: relative;
+    animation-delay: 0.5s;
+    -webkit-animation-delay: 0.5s;
+    animation-duration: 1s;
+    -webkit-animation-duration:1s ;
+}
+.li5_footer{
+    width: 13px;
+    height: 50px;
+    border-right: 1px dashed lightsteelblue;
+    margin: 0 0 0 46%;
+    animation-delay: 0.5s;
+    -webkit-animation-delay: 0.5s;
+    animation-duration: 1s;
+    -webkit-animation-duration:1s ;
+}
+.li5_content>div{
+    width: 300px;
+    height: 125px;
+    margin-top: 10%;
+
+}
+.li5_content div img{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: -8%;
+    display: inline-block;
+}
+.li5_content div span {
+    display: inline-block;
+}
+.li5_content div span.time{
+    display: inline-block;
+    width: 100px;
+    height: 20px;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    margin-left: 4%;
+}
+.li5_content div span.company{
+    display: inline-block;
+    width: 178px;
+    height: 18px;
+    font-size:14px;
+    color: #fff;
+    text-align: center;
+    border: 1px dashed lightskyblue;
+}
+.li5_content span.bg{
+    display: block;
+    width: 8px;
+    height: 8px;
+    background: lightblue;
+     border-radius: 50%;
+    position: absolute;
+    right: 0;
+    top: -2%;
+}
+.li5_content div.text{
+    width: 76%;
+    height: 78%;
+    border: 1px solid cornsilk;
+    margin: 1% auto 0;
+    background: #ececec;
+    border-radius: 5px;
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+.li6_content{
+    width: 180px;
+    height: 180px;
+    background: url("../images/weixin.png")no-repeat;
+    background-size: 100% 100%;
+    margin: 5% auto;
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+.li6_footer{
+    width: 150px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border: 1px dashed lightblue;
+    margin: 3% auto 0;
+    color: #fff;
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
 
 }
 
