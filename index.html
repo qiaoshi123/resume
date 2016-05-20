@@ -11,7 +11,7 @@
 <body>
 <div class="main" id="main">
     <div class="music " id="musicBtn">
-        <audio src="images/JarOfLove.MP3" id="musicMp3" preload="none" loop/>
+        <audio src="images/JarOfLove.MP3" id="musicMp3" preload="auto" loop/>
     </div>
 
     <ul class="list">
@@ -186,8 +186,10 @@
     audio.play();
     document.addEventListener("WeixinJSBridgeReady", function () {
             audio.play();
+	    audioAutoPlay();
     }, false);
-    window.setTimeout(audioAutoPlay,500);
+    //window.setTimeout(audioAutoPlay,500);
+	audioAutoPlay();
     function audioAutoPlay(){
         audio.play();
         audio.addEventListener('canplay',function(){
