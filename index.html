@@ -187,7 +187,7 @@
     document.addEventListener("WeixinJSBridgeReady", function () {
             audio.play();
     }, false);
-    window.setTimeout(audioAutoPlay,800);
+    window.setTimeout(audioAutoPlay,300);
     function audioAutoPlay(){
         audio.play();
         audio.addEventListener('canplay',function(){
