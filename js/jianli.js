@@ -76,7 +76,7 @@ $(function(){
             musicBtn.style.display='block';
             musicBtn.className="music audioMove";
         })
-    },500);
+    },800);
         $(musicBtn).on('tap',function(){
             if(music.paused){
                 music.play();
@@ -87,4 +87,5 @@ $(function(){
             }
         })
     }();
+
 });
