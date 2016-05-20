@@ -183,11 +183,11 @@
 <script type="text/javascript">
     var audio = document.getElementById(id);
     var btn=document.getElementById('musicBtn');
+    document.addEventListener("WeixinJSBridgeReady", function () {
+        audio.play();
+    }, false);
     function audioAutoPlay(id){
         audio.play();
-        document.addEventListener("WeixinJSBridgeReady", function () {
-            audio.play();
-        }, false);
         audio.addEventListener('canplay',function(){
             btn.style.display='block';
             btn.className="music audioMove";
