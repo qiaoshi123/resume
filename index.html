@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head lang="en">
     <meta charset="UTF-8">
@@ -186,10 +186,12 @@
         var btn=document.getElementById('musicBtn');
         audio.play();
         document.addEventListener("WeixinJSBridgeReady", function () {
-           
+            audio.play();
+        }, false);
+        audio.addEventListener('canplay',function(){
             btn.style.display='block';
             btn.className="music audioMove";
-        }, false);
+        })
     }
     audioAutoPlay('musicMp3');
 </script>
