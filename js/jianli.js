@@ -66,6 +66,15 @@ $(function(){
             $oLis.eq(prevIndex).css('transition','');
             $oLis.eq(Index).hide();
         });
+$(btn).on('tap',function(){
+        if(audio.paused){
+            audio.play();
+            audio.className='music audioMove'
+        }else{
+            audio.pause();
+            audio.className="music";
+        }
+    });
 
     //~function(){
     //var music=document.getElementById('musicMp3');
