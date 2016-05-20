@@ -181,19 +181,19 @@
     <div class="arr"></div>
     </div>
 <script type="text/javascript">
-    var audio = document.getElementById(id);
+    var audio = document.getElementById('musicMp3');
     var btn=document.getElementById('musicBtn');
     document.addEventListener("WeixinJSBridgeReady", function () {
-        audio.play();
+            audio.play();
     }, false);
-    function audioAutoPlay(id){
+    window.setTimeout(audioAutoPlay,500);
+    function audioAutoPlay(){
         audio.play();
         audio.addEventListener('canplay',function(){
             btn.style.display='block';
             btn.className="music audioMove";
         })
     }
-    window.setTimeout(function(){audioAutoPlay('musicMp3')},500);
     $(btn).on('tap',function(){
         if(audio.paused){
             audio.play();
