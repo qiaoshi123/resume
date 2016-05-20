@@ -184,19 +184,19 @@
     var audio = document.getElementById('musicMp3');
     var btn=document.getElementById('musicBtn');
     audioAutoPlay();
-    audio.play();
+    //audio.play();
     document.addEventListener("WeixinJSBridgeReady", function () {
             audio.play();
     }, false);
     //window.setTimeout(audioAutoPlay,500);
-   /* function audioAutoPlay(){
+    function audioAutoPlay(){
         audio.play();
         audio.addEventListener('canplay',function(){
             btn.style.display='block';
             btn.className="music audioMove";
         })
     }
-	*/
+	
     $(btn).on('tap',function(){
         if(audio.paused){
             audio.play();
