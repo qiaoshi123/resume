@@ -67,25 +67,19 @@ $(function(){
             $oLis.eq(Index).hide();
         });
 
-    ~function(){
-    var music=document.getElementById('musicMp3');
-    var musicBtn=document.getElementById('musicBtn');
-    window.setTimeout(function(){
-        music.play();
-        music.addEventListener('canplay',function(){
-            musicBtn.style.display='block';
-            musicBtn.className="music audioMove";
-        })
-    },800);
-        $(musicBtn).on('tap',function(){
-            if(music.paused){
-                music.play();
-                musicBtn.className='music audioMove'
-            }else{
-                music.pause();
-                musicBtn.className="music";
-            }
-        })
-    }();
+    //~function(){
+    //var music=document.getElementById('musicMp3');
+    //var musicBtn=document.getElementById('musicBtn');
+    //window.setTimeout(function(){
+    //    music.play();
+    //    music.addEventListener('canplay',function(){
+    //        musicBtn.style.display='block';
+    //        musicBtn.className="music audioMove";
+    //    })
+    //},800);
+
+    //}();
+
+
 
 });
