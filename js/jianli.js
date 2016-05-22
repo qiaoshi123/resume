@@ -69,10 +69,10 @@ $(function(){
 $(btn).on('tap',function(){
         if(audio.paused){
             audio.play();
-            audio.className='music audioMove'
+            $(btn).addClass('music audioMove');
         }else{
             audio.pause();
-            audio.className="music";
+            $(btn).removeClass('audioMove');
         }
     });
 
